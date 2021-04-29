@@ -1,0 +1,44 @@
+/* Styling using CSS variables */
+:root {
+  /* HARD-CODED values */
+  --body-margin: 16px;
+  --scroll-height: 16px;
+  --viewport-height: 100vh;
+  --photo-gap: 1vh;
+
+  /* Calculate maximum height of photos */
+  --space-needed: calc(2 * var(--body-margin) + var(--scroll-height));
+  --photo-size: calc(var(--viewport-height) - var(--space-needed));
+
+  /* Calculate width of viewport */
+  --viewport-width: calc(100vw - 2 * var(--body-margin));
+
+  /* Calculate width of wrapper */
+  --wrapper-width: calc(
+    9 * (var(--photo-size) + var(--photo-gap)) - var(--photo-gap)
+  );
+}
+
+body {
+  margin: var(--body-margin);
+}
+
+#viewport {
+  width: var(--viewport-width);
+  overflow: auto;
+}
+
+#wrapper {
+  width: var(--wrapper-width);
+  height: var(--photo-size);
+  background-color: black;
+}
+
+img {
+  height: 100%;
+  margin-right: var(--photo-gap);
+}
+
+img:last-child {
+  margin: 0;
+}

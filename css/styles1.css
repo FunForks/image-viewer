@@ -1,0 +1,21 @@
+/* Styling using hard-coded values */
+
+#viewport {
+  width: calc(100vw - 16px);
+  overflow: auto;
+}
+
+#wrapper {
+  width: calc(9 * 416px - 16px);
+  height: 400px;
+  background-color: black;
+}
+
+img {
+  height: 100%;
+  margin-right: 16px;
+}
+
+img:last-child {
+  margin: 0;
+}
