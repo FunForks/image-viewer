@@ -1,4 +1,5 @@
 /* Styling using CSS variables */
+
 :root {
   /* HARD-CODED values */
   --body-margin: 16px;
