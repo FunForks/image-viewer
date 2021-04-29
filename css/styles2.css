@@ -1,11 +1,12 @@
 /* Styling using CSS variables */
 
 :root {
-  /* HARD-CODED values */
+  /* <<< HARD-CODED values */
   --body-margin: 16px;
   --scroll-height: 16px;
   --viewport-height: 100vh;
   --photo-gap: 1vh;
+  /* HARD-CODED >>> */
 
   /* Calculate maximum height of photos */
   --space-needed: calc(2 * var(--body-margin) + var(--scroll-height));
