@@ -1,3 +1,3 @@
 # image-viewer
 
-[Demo](https://dciforks.github.io/image-viewer/)
+[Demo](https://funforks.github.io/image-viewer/)
